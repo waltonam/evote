@@ -16,7 +16,6 @@ public class Voter extends User{
         return voterID;
     }
 
-    @Override
     public void setVoterID(int voterID) {
         this.voterID = voterID;
     }

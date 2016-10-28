@@ -9,7 +9,7 @@ public class Authenticate {
     //Checks if user is registered. If so, sets the ID of the user and then creates
     public void Login(){}
 
-    public Official OfficialLogin(int voterID, int social, String securityMeasure){
+    public Official OfficialLogin(int social, String securityMeasure){
 
     }
 
