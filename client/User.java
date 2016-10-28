@@ -5,14 +5,10 @@ package client;
  */
 public class User {
     int voterID;
-    boolean registered;
 
     public User(){
 
     }
-
-    //Checks if user is registered. If so, sets the ID of the user and then creates
-    public void Login(int voterID, int social){}
 
     public int getvoterID() {
         return voterID;
