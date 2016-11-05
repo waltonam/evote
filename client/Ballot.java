@@ -1,15 +1,19 @@
 package client;
 
+import java.util.ArrayList;
+
 /**
  * Created by hoisi on 10/27/2016.
  */
 public class Ballot {
-    //candidate list
+    ArrayList candidates = new ArrayList();
 
     boolean ballotComplete;
     int voterID;
 
-    public Ballot(){}
+    public Ballot(ArrayList x){
+        this.candidates = x;
+    }
 
     public void print(){}
 
@@ -30,4 +34,5 @@ public class Ballot {
     public void setVoterID(int voterID) {
         this.voterID = voterID;
     }
+
 }

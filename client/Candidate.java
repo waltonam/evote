@@ -8,6 +8,16 @@ public class Candidate {
     String name;
     String office;
     String bio;
+
+    public String getParty() {
+        return party;
+    }
+
+    public void setParty(String party) {
+        this.party = party;
+    }
+
+    String party;
     int votesReceived;
 
     public Candidate(){}
@@ -18,5 +28,29 @@ public class Candidate {
 
     public void setVotesReceived(int votesReceived) {
         this.votesReceived = votesReceived;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getOffice() {
+        return office;
+    }
+
+    public void setOffice(String office) {
+        this.office = office;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
     }
 }
