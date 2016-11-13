@@ -26,8 +26,8 @@ public class Candidate {
         return votesReceived;
     }
 
-    public void setVotesReceived(int votesReceived) {
-        this.votesReceived = votesReceived;
+    public void addVotesReceived() {
+        this.votesReceived++;
     }
 
     public String getName() {

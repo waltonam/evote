@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by hoisi on 10/27/2016.
  */
 public class Ballot {
-    ArrayList candidates = new ArrayList();
+    private ArrayList candidates = new ArrayList();
 
     boolean ballotComplete;
     int voterID;
@@ -16,8 +16,6 @@ public class Ballot {
     }
 
     public void print(){}
-
-    public void submitBallot(){}
 
     public boolean isBallotComplete() {
         return ballotComplete;
@@ -33,6 +31,10 @@ public class Ballot {
 
     public void setVoterID(int voterID) {
         this.voterID = voterID;
+    }
+
+    public ArrayList getCandidates() {
+        return candidates;
     }
 
 }
