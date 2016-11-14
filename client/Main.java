@@ -25,7 +25,7 @@ public class Main {
         String name = scannie.next();
         for(int i = 0; i < ballot.getCandidates().size(); i++){
             Candidate y = (Candidate) ballot.getCandidates().get(i); //This can't be help due to arrayList.get() right?
-            if(name.equals(y.getName())){ //BUG: Something with indexing, vote getting counted twice
+            if(name.equals(y.getName())){
                 y.addVotesReceived();
             }
         }
@@ -34,6 +34,6 @@ public class Main {
         tally.addBallot(ballot);
 
         //Print test
-        System.out.println("Done two");
+        System.out.println("Done");
     }
 }

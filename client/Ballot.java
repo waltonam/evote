@@ -12,7 +12,12 @@ public class Ballot {
     int voterID;
 
     public Ballot(ArrayList x){
-        this.candidates = x;
+        //used to be this, but I think this was just a reference. Need a new object
+//        this.candidates = x;
+        for(int j = 0; j < x.size(); j++) {
+            Candidate y = (Candidate) x.get(j);
+            this.candidates.add(y);
+        }
     }
 
     public void print(){}
