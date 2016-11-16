@@ -40,7 +40,7 @@ public class Tally {
     }
 
     public void read(){
-        File f = new File("client/test");
+        File f = new File("client/test.txt");
         try {
             BufferedReader br = new BufferedReader(new FileReader(f));
             String fileRead = br.readLine();

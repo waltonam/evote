@@ -3,7 +3,7 @@ package client;
 /**
  * Created by hoisi on 10/27/2016.
  */
-public class Voter extends User{
+public class Voter{
     int voterID;
 
     public Voter(){}
