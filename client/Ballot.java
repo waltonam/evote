@@ -15,8 +15,12 @@ public class Ballot {
         //used to be this, but I think this was just a reference. Need a new object
 //        this.candidates = x;
         for(int j = 0; j < x.size(); j++) {
+            Candidate add = new Candidate();
             Candidate y = (Candidate) x.get(j);
-            this.candidates.add(y);
+            add.setBio(y.getBio());
+            add.setName(y.getName());
+            add.setParty(y.getParty());
+            this.candidates.add(add);
         }
     }
 
